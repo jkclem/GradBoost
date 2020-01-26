@@ -18,7 +18,7 @@ Clone this repository, move into the directory, and install with pip:
 
 In your Python code you can import it as:
 
-`from GradBoost import GradBoost
+`from GradBoost import GradBoost`
 
 ## Example
 
