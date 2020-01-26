@@ -30,7 +30,7 @@ def GradBoost(model,
     
     # performs gradient boosting with a tqdm progress bar
     if verbose:
-        from tqdm import tqdm_notebook as tqdm
+        from tqdm import tqdm
         # iterates through the boosting round
         for _ in tqdm(range(0, boosting_rounds)):
             # fit the model to the pseudo residuals
