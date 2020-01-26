@@ -20,7 +20,6 @@ def GradBoost(model,
     almost any scikit-learn model to be used.
     '''
     import numpy as np
-    from tqdm import tqdm_notebook as tqdm
     
     # make a first guess of our training target variable using the mean
     y_hat_train = np.repeat(np.mean(y_train), len(y_train))
@@ -31,6 +30,7 @@ def GradBoost(model,
     
     # performs gradient boosting with a tqdm progress bar
     if verbose:
+        from tqdm import tqdm_notebook as tqdm
         # iterates through the boosting round
         for _ in tqdm(range(0, boosting_rounds)):
             # fit the model to the pseudo residuals
