@@ -13,7 +13,7 @@ setup(name='GradBoost',
       author='John Clements',
       author_email='jkclements2016@gmail.com',
       license='MIT',
-      packages=['chowtest'],
+      packages=['GradBoost'],
       install_requires=[
           'numpy', 'typing', 'tqdm'
       ],
